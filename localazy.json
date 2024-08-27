@@ -1,0 +1,30 @@
+{
+  "writeKey": "a7252587635937377216-eabbe03a67f28e6ab7aa773ab4880810421cbfdfcaeec3127b4f37c7123fd61c",
+  "readKey": "a7252587635937377216-15712b233e084e785bcb1e50d6215eda0ebf0150c32c0ecc630b8856b11a5124",
+
+  "upload": {
+    "type": "json",
+    "filterSource": false,
+    "deprecateMissing": true,
+    "files": [
+      {
+        "path": "Index.html",
+        "pattern": "data-localazy-key"
+      },
+      {
+        "pattern": "translations/en.json",
+        "lang": "inherited"
+      },
+      {
+        "group": "existing",
+        "pattern": "src/js/i18n/*.json",
+        "excludes": ["src/js/i18n/en.json"],
+        "lang": "${autodetectLang}"
+      }
+    ]
+  },
+  "download": {
+    "files": "translations/${lang}.json",
+    "includeSourceLang": true
+  }
+}
